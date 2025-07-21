@@ -5,7 +5,11 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue.svg)](https://www.linkedin.com/in/ahmad-hammam-1561212b2)
 
-A probabilistic deep learning approach to movie recommendations using Restricted Boltzmann Machines (RBM) implemented in PyTorch. This project demonstrates energy-based models for collaborative filtering with binary rating predictions.
+**Binary movie recommendation system using Restricted Boltzmann Machines - predicts whether users will LIKE or DISLIKE movies with probabilistic deep learning.**
+
+A probabilistic deep learning approach to movie recommendations using Restricted Boltzmann Machines (RBM) implemented in PyTorch. This project demonstrates energy-based models for collaborative filtering with **binary rating predictions** (like/dislike), perfect for thumbs-up/thumbs-down recommendation systems.
+
+> 🎯 **Looking for rating predictions (1-5 stars)?** Check out my **[Stacked AutoEncoder implementation](https://github.com/Ahmadhammam03/movie-recommendation-sae)** for continuous rating predictions!
 
 ## 🌟 Features
 
@@ -246,13 +250,19 @@ Where Z is the partition function (normalization constant)
 
 ## 📊 Comparison: RBM vs SAE
 
-| Feature | RBM | SAE |
+| Feature | RBM (This Project) | SAE ([Link](https://github.com/Ahmadhammam03/movie-recommendation-sae)) |
 |---------|-----|-----|
-| Type | Generative | Discriminative |
-| Output | Probabilistic | Deterministic |
-| Training | Unsupervised | Unsupervised |
-| Sampling | Required | Not Required |
-| Use Case | Binary Predictions | Continuous Ratings |
+| **Output Type** | **Binary (Like/Dislike)** | **Continuous (1-5 Stars)** |
+| **Use Case** | **Thumbs Up/Down Systems** | **Rating Prediction** |
+| **Model Type** | Generative (Energy-based) | Discriminative (Reconstruction) |
+| **Learning** | Probabilistic Sampling | Deterministic Encoding |
+| **Architecture** | Bipartite Graph | Multi-layer Network |
+| **Training** | Contrastive Divergence | Backpropagation |
+| **Best For** | Binary preferences, discovery | Precise rating prediction |
+
+### When to Use Which:
+- **🔥 RBM (This Project)**: Netflix-style thumbs up/down, Spotify-like discovery, binary feedback systems
+- **⭐ SAE ([Other Project](https://github.com/Ahmadhammam03/movie-recommendation-sae))**: Amazon-style star ratings, detailed preference modeling, rating prediction
 
 ---
 
